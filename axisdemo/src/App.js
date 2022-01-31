@@ -40,6 +40,7 @@ gender:"female"},
 }
 export default App;*/
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import StudentTable from "./components/StudentTable";
 
 import Form from "./pages/form";
 import PromiseDemo from "./pages/PromiseDemo";
@@ -51,7 +52,8 @@ function App() {
         
         <Route exact path="/" element={<Form />} />
         <Route exact path="/" element={<PromiseDemo />} />
-    
+         
+        <Route exact path="/" element={<StudentTable />} /> 
       </Routes>
     </BrowserRouter>
   );
